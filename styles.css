@@ -338,8 +338,8 @@ footer {
 
   .back-btn {
     position: fixed;
-    top: 100px;
-    left: 50%;
+    top: 10px;
+    left: 80%;
     transform: translateX(-50%);
     z-index: 9999;
     background: rgba(255, 255, 255, 0.15);
