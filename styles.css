@@ -326,7 +326,7 @@ footer {
     gap: 15px;
     width: 100%;
     padding: 0 10px;
-    padding-bottom: 20px;
+    padding-bottom: 20px !important;
   }
 
   .big-tab {
@@ -339,7 +339,7 @@ footer {
   .back-btn {
   position: fixed !important;
   top: 10px !important;
-  right: 10px !important;
+  right: 9px !important;
   left: auto !important; 
   transform: none !important;
   z-index: 9999 !important;
