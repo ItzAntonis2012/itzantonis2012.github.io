@@ -302,6 +302,9 @@ footer {
     height: 100%;
     overflow: hidden;
   }
+  .tabs-container {
+  padding-bottom: 120px; /* space for footer so buttons don't get covered */
+  }
   #site-icon {
     display: block;
     width: 80vw;
