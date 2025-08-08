@@ -336,31 +336,21 @@ footer {
     margin-bottom: 15px;
   }
 
-  back-btn {
-  position: fixed;
-  top: 10px;
-  right: 20px; /* Fixed distance from right edge */
-  transform: none; /* Remove translate */
-  z-index: 9999;
-  background: rgba(255, 255, 255, 0.15);
-  color: #f0f0f0;
-  padding: 12px 24px;
-  font-size: 1.5rem;
-  border-radius: 14px;
-  border: none;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-  font-weight: 600;
+  .back-btn {
+  position: fixed !important;
+  top: 10px !important;
+  right: 20px !important;
+  transform: none !important;
+  z-index: 9999 !important;
+  background: rgba(255, 255, 255, 0.15) !important;
+  color: #f0f0f0 !important;
+  padding: 12px 24px !important;
+  font-size: 1.5rem !important;
+  border-radius: 14px !important;
+  border: none !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3) !important;
+  font-weight: 600 !important;
 }
-footer {
-    width: 100%;
-    max-width: 100%;
-    padding: 10px 0;
-    bottom: 0;
-    left: 0;
-    transform: none;
-    position: fixed;
-    z-index: 999;
-  }
 
    .social-icons {
     display: grid !important;
