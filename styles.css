@@ -340,6 +340,7 @@ footer {
   position: fixed !important;
   top: 10px !important;
   right: 20px !important;
+  left: auto !important; 
   transform: none !important;
   z-index: 9999 !important;
   background: rgba(255, 255, 255, 0.15) !important;
@@ -351,6 +352,7 @@ footer {
   box-shadow: 0 4px 12px rgba(0,0,0,0.3) !important;
   font-weight: 600 !important;
 }
+
 
    .social-icons {
     display: grid !important;
