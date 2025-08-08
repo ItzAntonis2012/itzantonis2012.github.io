@@ -306,8 +306,8 @@ footer {
   padding-bottom: 120px;
   }
    .tabs-container {
-    padding-bottom: 0; /* remove any bottom padding if any */
-    margin-bottom: 120px; /* push container up by adding margin-bottom */
+    padding-bottom: 0;
+    margin-bottom: 120px; 
     position: relative;
     bottom: -15px; 
   }
