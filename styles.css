@@ -305,6 +305,12 @@ footer {
   .tabs-container {
   padding-bottom: 120px;
   }
+   .tabs-container {
+    padding-bottom: 0; /* remove any bottom padding if any */
+    margin-bottom: 120px; /* push container up by adding margin-bottom */
+    position: relative;
+    bottom: -15px; 
+  }
   #site-icon {
     display: block;
     width: 80vw;
