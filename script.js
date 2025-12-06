@@ -2,7 +2,8 @@ const URLs = {
   tab1: 'https://github.com/itzAntonis2012/evalpatch/releases/latest',
   subtab1: 'https://github.com/ItzAntonis2012/modernizepspgames/releases/tag/v1-SteamArtwork',
   subsubtab1: 'https://github.com/ItzAntonis2012/modernizepspgames/releases/tag/v1-LCS',
-  subsubtab2: 'https://github.com/ItzAntonis2012/modernizepspgames/releases/tag/v1-VCS'
+  subsubtab2: 'https://github.com/ItzAntonis2012/modernizepspgames/releases/tag/v1-VCS',
+  subsubtab3: 'https://github.com/ItzAntonis2012/modernizepspgames/releases/tag/v1-CTW'
 };
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -52,6 +53,11 @@ document.addEventListener('DOMContentLoaded', () => {
   // Subsubtab 2 - redirect
   subsubtab2.onclick = () => {
     window.location.href = URLs.subsubtab2;
+  };
+
+  // Subsubtab 3 - redirect
+  subsubtab3.onclick = () => {
+    window.location.href = URLs.subsubtab3;
   };
 
   // Back buttons
