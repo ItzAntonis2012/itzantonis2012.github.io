@@ -293,22 +293,30 @@ footer {
 
 
 @media (max-width: 600px) {
-  html, body { height: 100%; overflow: visible; }
-  main { height: 100%; overflow: hidden; }
+  html, body {
+    height: 100%;
+    overflow: visible;
+  }
 
+  main {
+    height: 100%;
+    overflow: hidden;
+  }
+  .tabs-container {
+  padding-bottom: 120px;
+  }
+   .tabs-container {
+    padding-bottom: 0;
+    margin-bottom: 120px; 
+    position: relative;
+    bottom: -15px; 
+  }
   #site-icon {
     display: block;
     width: 80vw;
     max-width: 300px;
     height: auto;
     margin: 20px auto;
-  }
-  
-    .tabs-container {
-    padding-bottom: 0;
-    margin-bottom: 120px; 
-    position: relative;
-    bottom: -15px; 
   }
 
   #main-tabs {
@@ -319,77 +327,62 @@ footer {
     width: 100%;
     padding: 0 10px;
     padding-bottom: 20px !important;
-    margin-top: 6px;
   }
 
-  .big-tab { width: 100% !important; max-width: 400px; height: auto; margin-bottom: 15px; }
+  .big-tab {
+    width: 100% !important;
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 15px;
+  }
 
   .back-btn {
-    position: fixed !important;
-    top: 78px !important;
-    right: 10px !important;
-    left: auto !important;
-    transform: none !important;
-    z-index: 9999 !important;
-    background: rgba(255,255,255,0.16) !important;
-    color: #f0f0f0 !important;
-    padding: 10px 22px !important;
-    font-size: 1.25rem !important;
-    border-radius: 14px !important;
-    border: none !important;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3) !important;
-    font-weight: 600 !important;
-  }
+  position: fixed !important;
+  top: 10px !important;
+  right: 9px !important;
+  left: auto !important; 
+  transform: none !important;
+  z-index: 9999 !important;
+  background: rgba(255, 255, 255, 0.15) !important;
+  color: #f0f0f0 !important;
+  padding: 12px 24px !important;
+  font-size: 1.5rem !important;
+  border-radius: 14px !important;
+  border: none !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3) !important;
+  font-weight: 600 !important;
+}
 
-  .social-icons {
+
+   .social-icons {
     display: grid !important;
     grid-template-columns: repeat(4, auto);
-    grid-auto-rows: auto;
+    grid-template-rows: auto auto;
     gap: 8px;
     padding: 0 10px;
     justify-content: center;
   }
 
-  .social-icons > :nth-child(1) { grid-column: 1; grid-row: 1; }
+  .social-icons > :nth-child(1) {
+    grid-column: 1;
+    grid-row: 1 / 3;
+    align-self: center;
+    justify-self: center;
+  }
+
   .social-icons > :nth-child(2) { grid-column: 2; grid-row: 1; }
   .social-icons > :nth-child(3) { grid-column: 3; grid-row: 1; }
   .social-icons > :nth-child(4) { grid-column: 4; grid-row: 1; }
-  .social-icons > :nth-child(8) { grid-column: 1; grid-row: 2; }
+
   .social-icons > :nth-child(5) { grid-column: 2; grid-row: 2; }
   .social-icons > :nth-child(6) { grid-column: 3; grid-row: 2; }
   .social-icons > :nth-child(7) { grid-column: 4; grid-row: 2; }
-
-  .social-tab { width: 60px; height: 60px; border-radius: 20px; box-shadow: 0 3px 8px rgba(0,0,0,0.3); }
-
-  #submenu1 .tabs-container { margin-top: 6px; }
-
-  #submenu2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 20px;
-    padding-bottom: 140px;
-    min-height: calc(100vh - 120px);
-    box-sizing: border-box;
+}
+  .social-tab {
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
+    flex-basis: 60px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.3);
   }
-
-  #submenu2 .tabs-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto auto;
-    gap: 14px;
-    justify-items: center;
-    align-items: start;
-    width: 100%;
-    max-width: 420px;
-    margin-top: 60px;
-    box-sizing: border-box;
-    flex-grow: 1;
-  }
-
-  #subsubtab1 { grid-column: 1; grid-row: 2; width: 150px; height: 100px; }
-  #subsubtab2 { grid-column: 2; grid-row: 2; width: 150px; height: 100px; }
-  #subsubtab3 { grid-column: 1 / span 2; grid-row: 3; width: 170px; height: 110px; justify-self: center; }
-
-  #submenu2 .tabs-container > div { border-radius: 12px; overflow: hidden; }
 }
